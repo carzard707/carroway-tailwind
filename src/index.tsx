@@ -4,8 +4,9 @@ import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { Route } from './routes/__root';
 import { homePageRoute } from './pages/Home';
 import "./index.css"
+import { resultsPageRoute } from './pages/Results';
 //@ts-ignore
-export const routeTree = Route.addChildren([homePageRoute]);
+export const routeTree = Route.addChildren([homePageRoute, resultsPageRoute]);
 
 const router = createRouter({ routeTree })
 
